@@ -5,3 +5,77 @@ h1 {
 h3 {
 	color: #29A3A3;
 }
+
+a:link {color: #69aeaf;}
+a:visited {color: #f38ccd;}
+a:hover {color: #7f5b80;}
+a:active {color: #0b7788;}
+
+
+
+body {
+	text-align: center;
+}
+
+#header {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+
+}
+
+.socialIcons {
+	display: inline-block;
+	margin: 0 auto;
+	width: 40px;
+
+}
+
+.greigeBox {
+	background-color: #587889;
+	display: inline-block;
+	margin: 0 auto;
+	width: 80%;
+	border-radius: 25px;
+	padding-bottom: 70px;
+
+
+}
+
+.bodyText {
+	display: block;
+	text-align: left;
+	width: 95%;
+	margin: auto;
+	padding-top: 30px;
+	color: white;
+	padding-bottom: 50px;
+}
+
+
+.visitThese {
+	display: inline;
+	text-align: center;
+	width: 60px;
+	font-size: 4em;
+	padding-left: 40px;
+	padding-right: 40px;
+	border: 2px white dotted;
+	border-radius: 20px;
+	padding-bottom: 20px;
+	padding-top: 5px;
+	margin-left: 30px;
+	margin-right: 30px;
+
+	
+	
+}
+
+.mailTo {
+	font-weight: bold;
+	padding: 20px;
+
+}
+
+
