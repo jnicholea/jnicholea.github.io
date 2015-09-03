@@ -1,3 +1,26 @@
+.blogPostBreak {
+  border:none;
+  border-top:5px solid;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:100%;
+  margin-bottom: 30px;
+
+}
+
 .visitThese {
-	margin-top: 1000px;
+	display: inline;
+	text-align: center;
+	width: 20px;
+	font-size: 2em;
+	padding-left: 40px;
+	padding-right: 40px;
+	border: 2px white dotted;
+	border-radius: 20px;
+	padding-bottom: 15px;
+	padding-top: 5px;
+	margin-left: 30px;
+	margin-right: 30px;
+
 }

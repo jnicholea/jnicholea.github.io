@@ -47,11 +47,12 @@ body {
 	padding-top: 30px;
 	color: white;
 	padding-bottom: 50px;
+	font-size: 16px;
 }
 
 .greigePic {
 	display: inline-block;
-	width: 30%;
+	width: 40%;
 	margin-top: 40px;
 	border: 8px solid white;
 }
@@ -60,8 +61,8 @@ body {
 .visitThese {
 	display: inline;
 	text-align: center;
-	width: 60px;
-	font-size: 3em;
+	width: 20px;
+	font-size: 2em;
 	padding-left: 40px;
 	padding-right: 40px;
 	border: 2px white dotted;

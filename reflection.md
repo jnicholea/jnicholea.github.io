@@ -1,0 +1,6 @@
+(jnicholea.github.io)[http://jnicholea.github.io/]
+
+1. I'm not 100% there, but this really helped me see how border, margin, and display work. I've messed around with CSS before, but this was the first time where I felt like it only took me a few times to work out what I needed to change and how much I needed to change it. I realized that I've often been trying to change spacing by changing the padding (it sounds like it would pad between the two elements!) but what I usually need is to add to the border. 
+2. I'm still struggling with position and how I can work with it. I tried to make the position of my header fixed, but then it was positioned in front of my other elements and I couldn't figure out how to force it to the back without spending too much time on the challenge! I already spent too much time on the challenge as-is (but it looks so very pretty).
+3. I'm so glad I did the wireframing beforehand because it was very easy to code the site since I already knew what I wanted the design to look like. Putting together the body was definitely the easiest, working with the header elements and social media links because once I tried changing their positoning and borders things started to get messy.
+4. Elements are placed on the screen with HTML, arranged on the screen with CSS.
