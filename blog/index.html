@@ -21,13 +21,49 @@
     <section>
     <div  class="greigeBox">
 
+    <h1>Thinking of Margin/Border/Padding as Images on a Wall</h1>
+    <h4>9-3-2015</h4>
+
+
+    <article class="blogPostText">
+        <p>Imagine a completely blank webpage. Place an image of an adorable baby make a sour face upon first tasting a lemon. Adorable! Except your image feels like it's clinging to the upper left corner of your page and you'd like to give it some space to breathe. And you also notice that it looks a little flat and could benefit from having a lime green border to offset the lemon yellow in the photos.</p>
+
+        <p>Once you have your puckering baby surrounded by a lime green border should you change the dimensions of the margin, border, or padding to make your desired changes? I found the answer to this question clicked for me when I started each element on the page as a framed and matted image on a wall. All websites can be thought of as an arrangement of square containers, often referred to as divs. The edges of the wall below represents the div or container that the element is sitting inside.</p>
+
+        <p><strong>1</strong> = <em>Margin</em>. The space between the edge of the wall and element is the margin.
+        <br>
+
+        <strong>2</strong> = <em>Border</em>. The white wooden frame seen below is the border between the margin and the padding.
+        <br>
+
+        <strong>3</strong> = <em>Padding</em>. Inside of the border is the off-white thick paper used as a mat. It gives some nice breathing room between the border and the actual content.
+        <br>
+
+        <strong>4</strong> = <em>Content</em>. In the visual example below the content is a reproduction of a painting. On the web it can be an image or text.</p>
+
+        <img class="blogImages" src="../imgs/framedimage.jpg" alt="Image on Wall">
+
+        <p>When making changes to elements on your site and trying to decide whether to change the border, padding, or margin, think about exactly what you're trying to change. Using the image on the wall above...</p>
+
+        <p>Do you want the image+mat+frame to stay the same, but you want the image to be closer to or farther from the edge of the wall? Change the margin.</p>
+
+        <p>Do you like where the image+mat sit on the wall but want a thick pumpkin-orange border around the image and the mat? Change the border color and size.</p>
+
+        <p>Do you want more breathing room between your image and your border? (A larger mat?) Change your padding.</p>
+
+        <p>CSS placement can be tricky, and changing the above parameters might not put your logo or title or navigation bar quite where you'd like it to go. Your website is a series of boxes next to boxes inside boxes (divs) and there are a variety of factors that can affect how your website looks and where things go. But when you're thinking about one element, and the div it sits inside, and the way your element is placed within that div, changing the margin, border, and padding should get your content looking the way you desire it to.</p>
+    </p>
+    </article>
+
+    <div class="blogPostBreak"></div>
+
     <h1>Taking Ownership of the Dev Bootcamp Experience</h1>
   <h3><em>Walk into the kitchen, grab a ladle, stir up your future</em></h3>
   <h4>8-27-2015</h4>
 
   <article class="blogPostText">
     <p>
-      I signed up for <a href="http://devbootcamp.com/">Dev Bootcamp</a> specifically because of the phase-based program structure with an emphasis on developing the <a href="http://psychcentral.com/lib/what-is-emotional-intelligence-eq/">EQ</a> of an individual along with their <a href="http://www.quora.com/How-do-I-increase-my-IQ-1">IQ</a>. The phase-based program allows me the space I need to really learn the material, instead of forcing myself to rush in order to meet all of the deadlines. <!--more--> Of course my goal is to finish the program the week before Christmas and move into a new chapter of my life in the first week of 2016, but it is very important to me that I graudate the program after soaking up as much as possible before the technical interviews and the new job training begins. I've been passionate about the growth mindset after reading <a href="http://www.hachettebookgroup.com/titles/salman-khan/the-one-world-schoolhouse/9781455508372/">The One World Schoolhouse</a> and am excited to be a part of a learning environment where the capacity to learn is emphasized as robustly as the curriculum. 
+      I signed up for <a href="http://devbootcamp.com/">Dev Bootcamp</a> specifically because of the phase-based program structure with an emphasis on developing the <a href="http://psychcentral.com/lib/what-is-emotional-intelligence-eq/">EQ</a> of an individual along with their <a href="http://www.quora.com/How-do-I-increase-my-IQ-1">IQ</a>. The phase-based program allows me the space I need to really learn the material, instead of forcing myself to rush in order to meet all of the deadlines. Of course my goal is to finish the program the week before Christmas and move into a new chapter of my life in the first week of 2016, but it is very important to me that I graudate the program after soaking up as much as possible before the technical interviews and the new job training begins. I've been passionate about the growth mindset after reading <a href="http://www.hachettebookgroup.com/titles/salman-khan/the-one-world-schoolhouse/9781455508372/">The One World Schoolhouse</a> and am excited to be a part of a learning environment where the capacity to learn is emphasized as robustly as the curriculum. 
     </p>
     <p>
         <a href="https://vimeo.com/85001014">Shereef's Fireside Chat</a> clarified some of my assumptions and further reinforced that this program is the right choice for me. One week in and I'm already scrambling a bit to make furthter adjustments in my life to accomodate the workload of Phase 0. I've been a work-at-home-mom for over five years now, and there are a lot of things I'm going to need to adjust about my schedule and mindset in order to manage the demands of my future job. Phase 0 is not only preparing me for Phase 1, 2, and 3 of the DBC program, but also is providing me a glimpse into what my work-life balance is going to be like after DBC graduation. Attending a program without something like the Phase 0 ramp-up period and the Phase 1/2/3 holistic approach to developing a person instead of just a programmer would have been a recipe for mental/emotional collapse for me. 
@@ -39,11 +75,12 @@
 
    <div class="blogPostBreak"></div>
 
+
    <h1>Version Control and GitHub</h1>
   
    <h4>8-25-2015</h4>
 
-  <article>
+  <article class="blogPostText">
     <p>
       During my college years group projects were one of my least favorite things. It took far too long to decide on a project focus, and once we did start working toward something we would have to pull out our calendars and try to find a time where we could all meet up at the same time. This was before Google Docs, and working remotely on the same file would require saving multiple versions of the same file to keep track of which version we were working on. <i>Historypaper1, Historypaper2-modifiedoctober5, HistorypapereditsbyJenna,</i> etc etc. Today when working on group projects there is no need for meeting in the same place at the same time to work, or renaming the same file over and over to try to keep track of what changed what and when. Establishing a tight workflow that implements a version control system and utilizes Git and Github will address all of those obstacles.
     </p>
@@ -54,11 +91,12 @@
         GitHub is a social network hub that currently claims the title of largest online storage space of collaborative works. Upload your code to GitHub and mark it public and anyone who stumbles across your profile can take your code, load it on to their own computer, manipulate it, and upload their own version back to GitHub where the process can be repeated by someone else. Going back to the college group project example, college students working on coding projects for a class assignment can establish roles and responsibilities for each group member, create the main repository for their assignment, and complete the entire project remotely without the need to meet in person. If responsibilities are fuzzy and two people make changes in the same area GitHub will illuminate any merge conflicts to prevent duplicate work or overwriting of someone's efforts. A proper workflow will include a log of all changes, including information on who made the change, so there would be no more confusion about who is or isn't pulling their weight. 
     </p>
     </article>
-   
+   <section>
     <a class="visitThese" href="../index.html">home</a>
     <a class="visitThese" href="../about.html">about</a>
     <a class="visitThese" href="../works.html">works</a>
     <a class="visitThese" href="./index.html">blog</a>
+    </section>
     
     </div>
     </section>
