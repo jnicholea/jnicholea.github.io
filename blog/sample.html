@@ -1,0 +1,23 @@
+   bakers_array = ["Alice", "Jenny", "Derek", "Megan", "Samantha", "Josh", "Davis", "Brittney", "Jessica", "Brad", "Heather"]
+
+   p bakers_array.length
+
+  bakers_hash = {
+    :Alice => "cupcakes",
+    :Jenny => "brownies",
+    :Derek => "cake",
+    :Megan => "brownies",
+    :Samantha => "cupcakes",
+    :Josh => "cupcakes",
+    :Davis => "cupcakes",
+    :Brittney => "cookies",
+    :Jessica => "cookies",
+    :Brad => "brownies",
+    :Heather => "cookies"
+    }
+
+  p bakers_hash[:Samantha]
+  p bakers_hash.find {|key, val| val == "cake"}
+
+
+
