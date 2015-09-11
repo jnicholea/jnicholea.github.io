@@ -21,6 +21,81 @@
     <section>
     <div  class="greigeBox">
 
+      <h1><a name="WannaHash">Wanna Hash? Maybe Array?</a></h1>
+    <h4>09-11-2015</h4>
+
+
+    <article class="blogPostText">
+    <p>
+    Let's hold a bake sale! Doesn't that sound delicious? We'll have cupcakes and brownies and pies and maybe the woman down the street who runs a baking blog will invent something completely unique for all of us to taste. We send out a list to collect names and see who wants to participate. Alice, Jenny, Derek, Megan, Samantha, Josh, Davis, Brittney, Jessica, Brad, and Heather. 
+
+    If we're going to create a database where we can easily access the list of participants, an array is a great way to store our list. Create an array using the literal method by typing each of the names inside of square brackets, with quotation marks on either side of each name (string):
+
+    <pre>
+    bakers_array = ["Alice", "Jenny", "Derek", "Megan", "Samantha", "Josh", "Davis", "Brittney", "Jessica", "Brad", "Heather"]
+    </pre>
+
+    If a few weeks go by and you forget who signed up, accessing the list again is easy. Type in "p bakers" and the list will be printed back out to you:
+
+    <pre>
+    p bakers_array
+
+    -->["Alice", "Jenny", "Derek", "Megan", "Samantha", "Josh", "Davis", "Brittney", "Jessica", "Brad", "Heather"]
+
+    </pre>
+
+    As the bake sale approaches, you realize that you don't know how many people have signed up. Cue ".length":
+
+    <pre>
+    p bakers_array.length
+
+    -->11
+    </pre>
+
+    There are 11 bakers bringing goodies to your sale, but you want to make sure you have variety. Cupcakes are great, but what if someone came to the sale craving a brownie? Once you've collected who will be bringing what, an array won't work for storing both the name of the person and what they are bringing. This is where an array is what you're looking for. An array stores an object, like the names referred to as strings in our bakers array above, but it also can store corresponding information for each object. One value is called a key, the other is called a value. Hashes are always built with key-value pairs. 
+
+    For our baking sale the names will be the keys and the yummy treats people bring will be the values. Key names must <b>always</b> be unique, so when creating your hash think through what strings or integers might be duplicates of each other and make that the values.
+
+    <pre>
+    bakers_hash = {
+    :Alice => "cupcakes",
+    :Jenny => "brownies",
+    :Derek => "cake",
+    :Megan => "brownies",
+    :Samantha => "cupcakes",
+    :Josh => "cupcakes",
+    :Davis => "cupcakes",
+    :Brittney => "cookies",
+    :Jessica => "cookies",
+    :Brad => "brownies",
+    :Heather => "cookies"
+    }
+    </pre>
+
+    What was it that Samantha was bringing?
+    <pre>
+    p bakers_hash[:Samantha]
+
+    -->"cupcakes"
+    </pre>
+
+    And one ambitious person was bringing a cake, right? Who was that again?
+
+    <pre>
+    p bakers_hash.find {|key, val| val == "cake"}
+
+    -->[:Derek, "cake"]
+    </pre>
+
+    And that's one way to think about the difference between hashes and arrays. Now Derek, can you please bring me some of that cake?
+
+
+    </p>
+    </article>
+
+    <div class="blogPostBreak"></div>
+
+
     <h1><a name="ThinkingOf">Thinking of Margin/Border/Padding as Images on a Wall</a></h1>
     <h4>9-3-2015</h4>
 
