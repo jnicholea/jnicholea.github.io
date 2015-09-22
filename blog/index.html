@@ -3,12 +3,13 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
 <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-	<title>Jenna Andersen's Blog</title>
+	<title>Bits on Web Development</title>
 
 </head>
 <body>
+    <p class="blankSpace"><br></p>
 
- <img id="header" src="../imgs/homepageheader.png" alt="Jenna Andersen"></a>
+  <img id="header" src="../imgs/homepageheader.png" alt="Jenna Andersen"></a>
     <section>
     <a class="socialIcons" href="https://twitter.com/jennacole"> 
         <img src="../imgs/social_02.png" alt="Jenna Andersen on Twitter"></a>
@@ -16,10 +17,32 @@
         <img src="../imgs/social_04.png" alt="Jenna Andersen on Instagram"></a>
     <a class="socialIcons" href="https://www.facebook.com/jennacolephotography"> 
         <img src="../imgs/social_01.png" alt="Jenna Andersen on Facebook"></a>
+    <a class="socialIcons" href="https://github.com/jnicholea"> 
+        <img src="../imgs/social_14.png" alt="Jenna Andersen on GitHub"></a>
     </section>
 
     <section>
     <div  class="greigeBox">
+
+     <h1><a name="EnumeratorV">Enumerator v. Enumberable</a></h1>
+    <h4>9-22-2015</h4>
+
+
+    <article class="blogPostText">
+    <p>
+        <strong>Enumeration</strong>, <strong>enumerator</strong>, and <strong>enumerable</strong> are terms I encounter again and again as I search the web for solution to my coding challenges. I'm getting better at searching the Ruby documentation for enumerables to use in my code, but I confess that I couldn't clearly define what they are; at least until I decided to write this post.</p>
+
+        <p>As with most specialized concepts it will help to define another concept before wading into the terms at hand. A coding program is like a tower made of legos, with each lego block containing information about the tower as a whole. Each of those lego blocks is a module, and modules contain instructions that will help the program run for beginning to end and return the desired output.</p>
+
+        <p>To <strong>enumerate</strong> is to list, to mention things one by one. <strong>Enumeration</strong> is the act of enumerating.</p>
+
+        <p>An <strong>enumerator</strong> object is the tool that iterates over a list and returns an output.</p>
+
+        <p><strong>Enumerables</strong> are built-in methods (read: part of the Ruby programming language) that can be used throughout the modules to execute different functions. I think of them as a shortcut I can take thanks to the creators of Ruby. I don't have to figure out how to break down the steps necessary for the computer to sort an array in alphabetical order, I can use .sort for that.</p>
+    </p>
+    </article>
+
+    <div class="blogPostBreak"></div>
 
       <h1><a name="WannaHash">Wanna Hash? Maybe Array?</a></h1>
     <h4>09-11-2015</h4>
@@ -28,10 +51,11 @@
     <article class="blogPostText">
     <p>Let's hold a bake sale! Doesn't that sound delicious? We'll have cupcakes and brownies and pies and maybe the woman down the street who runs a baking blog will invent something completely unique for all of us to taste. We send out a list to collect names and see who wants to participate. Alice, Jenny, Derek, Megan, Samantha, Josh, Davis, Brittney, Jessica, Brad, and Heather. 
 
-    If we're going to create a database where we can easily access the list of participants, an <b>array</b> is a great way to store our list. Create an array using the literal method by typing each of the names inside of square brackets, with quotation marks on either side of each name (string):
+    If we're going to create a database where we can easily access the list of participants, an array is a great way to store our list. Create an array using the literal method by typing each of the names inside of square brackets, with quotation marks on either side of each name (string):
 
     <pre>
-    bakers_array = ["Alice", "Jenny", "Derek", "Megan", "Samantha", "Josh", "Davis",<br> "Brittney", "Jessica", "Brad", "Heather"]
+    bakers_array = ["Alice", "Jenny", "Derek", "Megan", "Samantha", "Josh", "Davis", <br>
+    "Brittney", "Jessica", "Brad", "Heather"]
     </pre>
 
     If a few weeks go by and you forget who signed up, accessing the list again is easy. Type in "p bakers" and the list will be printed back out to you:
@@ -39,7 +63,7 @@
     <pre>
     p bakers_array
 
-    -->["Alice", "Jenny", "Derek", "Megan", "Samantha", "Josh", "Davis", "Brittney",<br> "Jessica", "Brad", "Heather"]
+    -->["Alice", "Jenny", "Derek", "Megan", "Samantha", "Josh", "Davis", "Brittney", <br> "Jessica", "Brad", "Heather"]
 
     </pre>
 
@@ -51,7 +75,7 @@
     -->11
     </pre>
 
-    There are 11 bakers bringing goodies to your sale, but you want to make sure you have variety. Cupcakes are great, but what if someone came to the sale craving a brownie? Once you've collected who will be bringing what, an array won't work for storing both the name of the person and what they are bringing. This is where a <b>hash</b> is what you're looking for. A hash stores an object, like the names referred to as strings in our bakers array above, but it also can store corresponding information for each object. One value is called a key, the other is called a value. Hashes are always built with key-value pairs. 
+    There are 11 bakers bringing goodies to your sale, but you want to make sure you have variety. Cupcakes are great, but what if someone came to the sale craving a brownie? Once you've collected who will be bringing what, an array won't work for storing both the name of the person and what they are bringing. This is where an array is what you're looking for. An array stores an object, like the names referred to as strings in our bakers array above, but it also can store corresponding information for each object. One value is called a key, the other is called a value. Hashes are always built with key-value pairs. 
 
     For our baking sale the names will be the keys and the yummy treats people bring will be the values. Key names must <b>always</b> be unique, so when creating your hash think through what strings or integers might be duplicates of each other and make that the values.
 
@@ -176,9 +200,23 @@
     </section>
 
     <section>
-    	<address class="mailTo">
-    		<a href="mailto:jenna@jennaandersen.com">jenna@jennaandersen.com</a>
-    	</address>
+    	<ul class="postLinks">
+            <li id="postLinksHeader">Archive</li>
+            <li>
+             <a href="http://jnicholea.github.io/blog/index.html#EnumeratorV">Enumerators v. Enumerables</a>
+            </li>
+            <li>
+            <a href="http://jnicholea.github.io/blog/index.html#WannaHash">Wanna Hash? Maybe Array?</a>
+            </li>
+            <li>
+            <a href="http://jnicholea.github.io/blog/index.html#ThinkingOf">Margin/Border/Padding</a>
+            </li>
+            <li><a href="http://jnicholea.github.io/blog/index.html#TakingOwnership">Taking Ownership of DBC Experience</a>
+            </li>
+            <li><a href="http://jnicholea.github.io/blog/index.html#VersionControl">Version Control and GitHub</a>
+            </li>
+           
+            </li>
     </section>
 
 
