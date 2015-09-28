@@ -24,6 +24,67 @@
     <section>
     <div  class="greigeBox">
 
+    <h1><a name="InstanceVariables">Why Use Instance Variables</a></h1>
+    <h4>9-28-2015</h4>
+        <article class="blogPostText">
+
+        A method is a piece of code that acts like a shortcut, allowing you to run the same piece of code many times. Instead of writing out the process to be executed indvidually each time you want it to run, you can call out to the method and have it run when called. 
+        <br>
+        <br>
+        <code>
+        def method<br>
+            puts "You just made a method."<br>
+        end
+        </code>
+        <br>
+        <br>
+
+        But what about when you want methods to not only run one after the other, but pass information between them so Method B can build upon whatever Method A was tasked to accomplish?
+
+        Methods can be grouped together under a class and executed one after another to achieve the finale product. Instance variables are variables with an @ sign in front, allowing them to be accessed in both Method A and Method B. Here is a simple program for teaching basic math to a child. 
+        <br>
+        <br>
+        <code>
+        class Addition<br>
+        <br>
+          def first_pass<br>
+            @answer = 2<br>
+            puts "Hello! Let's talk about 1 + 1"<br>
+            puts "Do you know what 1+1 equals?"<br>
+            sleep 4<br>
+            puts @answer<br>
+            <br>
+            second_pass<br>
+          end<br>
+          <br>
+          def second_pass<br>
+            puts "Now get up and shake your wiggles out"<br>
+            puts "Shake shake shake"<br>
+            puts "Shake again!"<br>
+            puts " ... "<br>
+            puts "Now that you're done shaking can you tell me again, what is 1 + 1?"<br>
+            puts "Hit enter when you know the answer"<br>
+            gets<br>
+            puts "The answer is 1 + 1 ="<br>
+            sleep 1<br>
+            puts @answer<br>
+            end<br>
+            <br>
+        end<br>
+        </code>
+        <br>
+        <br>
+
+        Addition is a class where all of the methods reside.  first_pass is the first method, introducing the child to the idea that 1 + 1 = 2. The second_pass prompts them to wiggle a bit, and then revisit the question and see if they can respond with the correct answer. 
+        <br>
+
+        @answer is the variable used in both first_pass and second_pass. It seems silly to break them apart in this simple example, but once more complicated code is introduced moving the information between methods will become critical. In this basic example having the code run as two methods would allow the second_pass to be cut off, if the teacher wanted the student to skip the wiggles shaking and just focus on letting the child be asked the question, wait four seconds, and then be given the answer.
+        <br>
+        <br> 
+
+        </article>
+    <div class="blogPostBreak"></div>
+
      <h1><a name="EnumeratorV">Enumerator v. Enumberable</a></h1>
     <h4>9-22-2015</h4>
 
@@ -204,6 +265,9 @@
     <section>
     	<ul class="postLinks">
             <li id="postLinksHeader">Archive</li>
+            <li>
+             <a href="http://jnicholea.github.io/blog/index.html#InstanceVariables">Instance Variables</a>
+            </li>
             <li>
              <a href="http://jnicholea.github.io/blog/index.html#EnumeratorV">Enumerators v. Enumerables</a>
             </li>
