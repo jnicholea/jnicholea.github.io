@@ -1,0 +1,33 @@
+
+a:link {color: #47A375; text-decoration: underline; }
+a:active {color: #A16181; text-decoration: underline; }
+a:visited {color: #FF9494; text-decoration: underline; }
+a:hover {color: #A34775; text-decoration: none; }
+
+
+body {
+	background-color: black;
+}
+
+#note-dividers {
+	padding-top: 20px;
+	padding-bottom:20px;
+}
+
+.text-center {
+	text-align: center;
+	position: relative;
+	padding-left: 100px;
+	color: #E9BFD4;
+}
+
+#header-center {
+	text-align: center;
+	position: aboslute;
+	color: #E9BFD4;
+}
+
+
+#small-header {
+	color: #B7B8B8;
+}
