@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="cheaterstyles.css" >
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <meta charset="utf-8">
+<title>Javascript Cheatsheet</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="well">
+    <div class="row">
+      <div class="span12" >
+        <div id="header"><h1 id="header-center">Javascript. <small id="small-header">Tiddles and Bits.</small></h1>
+        </div>
+      </div>
+      <div class="span12">
+   
+        </div>
+        </div>
+        <div class="row">
+          <div id="left-row" class="col-sm-6">
+
+
+         	  <a class="toggle" href="javascript:void(0);">//variables names</a> 
+			    <div style="display:none;">
+			      Variable names can be any word that isn’t a reserved word (such as var). They may not include spaces. Digits can also be part of variable names—catch22 is a valid name, for example—but the name must not start with a digit. A variable name cannot include punctuation, except for the characters $ and _.
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//for loop</a> 
+			    <div class="hiddenLink" style="display:none;">
+			      <a href="http://www.sebarmeli.com/blog/2010/12/06/best-way-to-loop-through-an-array-in-javascript/">-->  http://www.sebarmeli.com/blog/2010/12/06/best-way-to-loop-through-an-array-in-javascript/
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//prompt for info, and then use that info in a follow-up prompt</a> 
+			    <div style="display:none;">  
+			      var x = prompt("What is your favorite sports team?")
+			      <br>
+  				  alert("Love that bunch of players.")
+  			     </div>
+
+  					<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//prompt for info and then add conditional terms if specific entry is inputted by user</a> 
+			    <div style="display:none;">
+			      var numberGuess = prompt("Guess a number. Any number. However, whatever you do, don't type in the number 3")
+			      <br>
+			      <br>
+			      if (numberGuess == "3" || numberGuess == "three" || numberGuess == "THREE" || numberGuess == "Three") {
+			      <br>
+  			      alert("I told you not to type in the number 3!")
+  			      window.location = "https://www.youtube.com/watch?v=oHg5SJYRHA0"
+			      }
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//falsy and truthy</a> 
+			    <div style="display:none;">
+			      // Outputs: "Falsy."<br>
+					logTruthiness(false);<br>
+
+				  // Outputs: "Falsy."<br>
+					logTruthiness(null);<br>
+
+				  // Outputs: "Falsy."<br>
+					logTruthiness(undefined);<br>
+
+				  // Outputs: "Falsy."<br>
+					logTruthiness(NaN);<br>
+
+				  // Outputs: "Falsy."<br>
+					logTruthiness(0);<br>
+
+				  // Outputs: "Falsy."<br>
+					logTruthiness("");<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//logical operators</a> 
+			    <div style="display:none;">
+			      && (and) - false seeking<br>
+				  || (or) - truth seeking
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//javascript array methods</a> 
+			    <div style="display:none;">
+			      .push - add an element on to the end<br>
+				  .pop - remove an element from the end<br>
+				  .unshift - add an element to the front<br>
+				  .shift - remove an element from the front<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//append Javascript array elements to html using while loop</a> 
+			    <div style="display:none;">
+			      for (var i = 0; i < bucket_list.length; i++) {<br>
+        		    $( "body" ).append(bucket_list[i] + " ");<br>
+        		      console.log(bucket_list[i]);<br>
+        		  }<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//invoke two arrays using one function/for loop</a> 
+			    <div style="display:none;">
+			         var append_strings = function (array) {<br>
+        			   for (var i = 0; i < array.length; i++) {<br>
+          			     $( "body" ).append(array[i] + " ");<br>
+      				   }<br>
+    				 }<br>
+    				 <br>
+    				append_strings(recipe)<br>
+    				append_strings(bucket_list)<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//pop and shift or add and remove first and last elements from array to add to new array</a> 
+			    <div style="display:none;">
+			      var scrambled_poem = "roses red are bacon crispy i bacon love and is blue violets are"<br><br>
+				  var scrambled_array = scrambled_poem.split(" ");<br>
+				  var unscrambled_array = ""<br>
+				  <br>
+				  unscrambled_array += scrambled_array.pop() + " " + scrambled_array.shift()<br>
+				  <br>
+				  console.log(scrambled_array)<br>
+				  console.log(unscrambled_array)<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//use forEach in function to return each item in an array nested inside a literal object</a> 
+			    <div style="display:none;">
+			      <em>(not all the code, just showing how forEach was used)</em><br>
+			      	<br>
+				  dog.toys.forEach(function(item) {<br>
+					if (item === toy) {<br>
+					  result = dog.name;<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//open-ended prompt</a> 
+			    <div style="display:none;">
+			      prompt("Tell me everything you know.", "...");
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//prompt for string, keep prompting until something is entered</a> 
+			    <div style="display:none;">
+			      do {<br>
+				    var yourName = prompt("Who are you?");<br>
+				  } while (!yourName);<br>
+				  <br>
+				  console.log(yourName);<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//computer 2^10 (two to the tenth power) using for loop, without a while loop</a> 
+			    <div style="display:none;">
+			      var result = 1; for (var counter = 0; counter < 10; counter = counter + 1)<br>
+  				  result = result * 2;<br>
+  				  <br>
+				  console.log(result);<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//switch and cases</a> 
+			    <div style="display:none;">
+			      switch (prompt("What is the weather like?")) {<br>
+					  case "rainy":<br>
+					    console.log("Remember to bring an umbrella.");<br>
+					    break;<br>
+					  case "sunny":<br>
+					    console.log("Dress lightly.");<br>
+					  case "cloudy":<br>
+					    console.log("Go outside.");<br>
+					    break;<br>
+					  default:<br>
+					    console.log("Unknown weather type!");<br>
+					    break;<br>
+				  }<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+            
+
+          </div>
+          <div id="right-row" class="col-sm-6">
+         	  <a class="toggle" href="javascript:void(0);">//keywords and reserved words</a> 
+			    <div style="display:none;">
+			      (don’t use them for variable names)
+			  	  <br>
+			  	  <br>
+				  break case catch class const continue debugger default delete do else enum export extends false finally for function if implements import in instanceof interface let new null package private protected public return static super switch this throw true try typeof var void while with yield
+				</div>
+
+					<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//basic function structure</a> 
+			    <div style="display:none;">
+			      var square = function(x)
+			  	  <br>
+				  { return x * x; };
+				  <br>
+				  <br>
+				  console.log(square(12));
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//conditional Logic Flow</a> 
+			    <div style="display:none;">
+			      Booleans & Comparators
+			      (Type the following into your console, can you guess what will be returned?)
+			      <br>
+			      <br>
+
+			      - > !true<br>
+			      - > !false<br>
+			      - > !!false<br>
+			      - > !!true<br>
+			      - > !!"type coercion"<br>
+			      - > !!"all strings are 'truthy' except for..."<br>
+			      - > !!""<br>
+
+			      - > true && true<br>
+			      - > true && false<br>
+			      - > false && true<br>
+			      - > false && false<br>
+			      - > true || true<br>
+			      - > true || false<br>
+			      - > false || true<br>
+			      - > false || false<br>
+
+			      - > true && "what does this evalute to?"<br>
+			      - > false && "and this?"<br>
+			      - > true || "sigh, i'm not needed"<br>
+			      - > false || "default value"<br>
+			    </div>
+
+			  		<div id="note-dividers"></div>
+
+			  <a class="toggle" href="javascript:void(0);">//write a while loop that counts from 0 to 50 by twos</a> 
+			    <div style="display:none;">  
+			       var n = 0<br>
+  				   console.log("I am called the Count... because I really love to count!")<br>
+  				   <br>
+				   while (n <= 50) {<br>
+				    console.log(n)<br>
+				    n += 2<br>
+				   }<br>
+				   <br>
+				   console.log('fin!')
+  				</div>
+
+  					<div id="note-dividers"></div>
+
+  			  <a class="toggle" href="javascript:void(0);">//count from 1 to 10, with a comma after each integer</a> 
+			    <div style="display:none;">  
+			       var n = 0<br>
+			       	<br>
+  				   while (n <= 10) {<br>
+                     if (n < 10){<br>
+      				 console.log(n+",")<br>
+    			   	 } else {<br>
+      				 console.log(n)<br>
+    				 }<br>
+    			     n++<br>
+  				   }<br>
+  				</div>
+
+			  		<div id="note-dividers"></div>
+
+			   <a class="toggle" href="javascript:void(0);">//iterate over property/properties in object, the for in loop</a> 
+			    <div style="display:none;">  
+			       for (var i in car) {<br>
+      			     if (i === "color") {<br>
+        			   console.log(car.color)<br>
+        			 $("#favorite_car_colors").append(car.color)<br>
+      				 }<br>
+    				}<br>
+  				</div>
+
+			  		<div id="note-dividers"></div>
+
+			   <a class="toggle" href="javascript:void(0);">//iterate over key in object, the for in loop</a> 
+			    <div style="display:none;">  
+			       for (var key in obj) {<br>
+      			     var value = obj[key]<br>
+      				 if (value === "down") {<br>
+      				 console.log(key)<br>
+      				   $("#direction_headed").append(key)<br>
+      				  }<br>
+    				}<br>
+  				</div>
+
+			  		<div id="note-dividers"></div>
+
+			   <a class="toggle" href="javascript:void(0);">//use for in to iterate/loop over and find the value of a property in an object</a> 
+			    <div style="display:none;">  
+			      for (var i in obj) {<br>
+                    if (i === target_key) {<br>
+        			  console.log(obj[i])<br>
+        			  $('#direction_headed').append(obj[i])<br>
+      				}<br>
+    			  }<br>
+  				</div>
+
+			  		<div id="note-dividers"></div>
+
+			   <a class="toggle" href="javascript:void(0);">//take values from array and place them into object using for loop</a> 
+			    <div style="display:none;">  
+			      var numbers = [2, 4, 5, 37, 0]<br>
+    			  var doubled_numbers = {}<br>
+    			  <br>
+				  for (var i = 0; i < numbers.length; i++) {<br>
+				    key = numbers[i]<br>
+				    value = numbers[i] * 2<br>
+				    doubled_numbers[key] = value<br>
+				    $("#doubles").append("<p>" + key + " doubled is " + value + "</p>")<br>
+				   }<br>
+  				</div>
+
+			  		<div id="note-dividers"></div>
+
+			    <a class="toggle" href="javascript:void(0);">//find even numbers of an array</a> 
+			    <div style="display:none;">  
+			      var a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],<br>
+				  b = [];<br>
+				  <br>
+				  for (var i = 0; i < a.length; ++i) {<br>
+					if ((a[i] % 2) === 0) {<br>
+					b.push(a[i]);<br>
+				    } <br>
+				  }<br>
+  				</div>
+
+			  		<div id="note-dividers"></div>
+
+			  	  <a class="toggle" href="javascript:void(0);">//create object using bracket notation</a> 
+			    <div style="display:none;">  
+			      var gradebook = new Object()
+  				</div>
+
+			  		<div id="note-dividers"></div>
+
+			  	  <a class="toggle" href="javascript:void(0);">//get average of an array, an array that is part of a nested object within a property of an Object</a> 
+			    <div style="display:none;">  
+			      gradebook.getAverage = function(name){<br>
+				    return average(gradebook[name].testScores);<br>
+				  }<br>
+				  <br>
+				  var average = function(scores){<br>
+				    var total = 0<br>
+				    for (var i in scores)<br>
+				    total += scores[i];<br>
+				    return total / scores.length<br>
+				  }<br>
+  				</div>
+
+			  		<div id="note-dividers"></div>
+
+       
+     
+
+    <div class="row">
+      <div class="well">
+        <div class="span12" >
+          <div id="footer"><p class="text-center">Personal notes on Javascript kept by Jenna Andersen.
+          <br>
+          <em>In no way should this be considered a definitive source. </em>	
+          </p></div>
+        </div>
+      </div>
+    </div>
+ 
+
+	<script type="text/javascript">
+	  $(".toggle").click(function() {  
+    	// hides matched elements if shown, shows if hidden 
+    	$(this).next().toggle();
+    	$(this).next().next().toggle();
+  	  }); 
+</script>
+</body>
+</html>
