@@ -1,3 +1,94 @@
+a:link {color: #bb4886;}
+a:visited {color: #bb4886;}
+a:hover {color: #7f5b80;}
+a:active {color: #0b7788;}
+
+a {
+	color: #99cccc;
+}
+#breathing_room {
+
+}
+
+#menu {
+/*	background-color: green;*/
+	padding-top: 30px;
+	/*padding-bottom: 20px;*/
+}
+
+/*.menu_buttons {
+	padding-left: 90px;
+	font-size: 30px;
+	font-weight: bolder;
+
+}*/
+
+@media(max-width: 480px) {
+  h1 {
+    font-size: 12pt;
+  }
+}
+
+#email {
+	font-size: 15px;
+	color: #99cccc;	
+}
+
+#left_col {
+	/*padding-top: 30px;*/
+
+}
+
+#middle_col {
+	padding-left: 40px;
+	/*background-color: red;*/
+	opacity: 0.75;
+
+}
+
+#right_col{
+	/*border-left: #587889 2px solid ;
+	border-top: #587889 2px solid ;
+	border-bottom: #587889 2px solid ;
+	padding-left: 20px;
+	padding-top: 20px;
+	/*background-color: black;*/
+}
+
+#logo{
+	width: 300px;
+	height: auto;
+	float: right;
+}
+
+.mailTo {
+	font-weight: bold;
+/*	padding-top: 250px;*/
+	margin-top: 20px;
+	margin-left: 50px;
+	position: absolute;
+
+}
+
+.body_pic {
+	width: 70%;
+	/*border: 5px solid #587889;*/
+	float: left;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.body_text {
+	text-align: right;
+	padding-right: 50px;
+	/*background-color: red;*/
+}
+
+/*
+
 .bodyTextRight {
 	float: right;
 	text-align: right;
@@ -11,12 +102,3 @@
 	font-family: Arial;
 }
 
-.visitThese {
-	position: relative;
-	float: left;
-	font-size: 2.1em;
-	margin-right: 20px;
-	padding-left:55px;
-	padding-top: 10px;
-	
-}

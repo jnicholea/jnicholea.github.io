@@ -23,7 +23,6 @@ a {
 
 }*/
 
-
 @media(max-width: 480px) {
   h1 {
     font-size: 12pt;
@@ -38,6 +37,7 @@ a {
 
 #left_col {
 	/*padding-top: 30px;*/
+
 }
 
 #middle_col {
@@ -57,9 +57,9 @@ a {
 }
 
 #logo{
-	width: 200px;
+	width: 300px;
 	height: auto;
-	float: left;
+	float: right;
 }
 
 .mailTo {
@@ -71,46 +71,20 @@ a {
 
 }
 
+.body_pic {
+	width: 75%;
+	/*border: 5px solid #587889;*/
+	float: left;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .body_text {
 	text-align: right;
 	padding-right: 50px;
 	font-size: 15px;
-}
-
-.project_links{
-	font-size: 14px;
-	font-style: italic;
-	padding-left: 60px;
-
-	
-}
-
-.project_screens{
-	border-radius: 900px;
-	width: 65%;
-	margin-left: 25px;
-/*	margin-top: 15px;*/
-	margin-bottom: 5px;
-	border: #f5f3d1 solid 10px;
-	margin-top: 40px;
-
-}
-
-/*.project_headers {
-	font-size: 50px;
-	font-weight: bold;
-	font-style: italic;
-	margin-left: 20px;
-	margin-top: 10px;
-	color: #288082;
-	padding-left: 40px;
-	opacity: .65;
-
-}*/
-
-#footer {
-	padding-top: 20px;
-	padding-left: 100px;
-
+	/*background-color: red;*/
 }
