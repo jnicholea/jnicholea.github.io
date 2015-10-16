@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
-	<title>Bits on Web Development</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <title>Jenna Andersen</title>
 
 </head>
 <body>
-    <p class="blankSpace"><br></p>
 
-  <img id="header" src="../imgs/homepageheader.png" alt="Jenna Andersen"></a>
-    <section>
-    <a class="socialIcons" href="https://twitter.com/jennacole"> 
-        <img src="../imgs/social_02.png" alt="Jenna Andersen on Twitter"></a>
-    <a class="socialIcons" href="https://instagram.com/jennacolephoto"> 
-        <img src="../imgs/social_04.png" alt="Jenna Andersen on Instagram"></a>
-    <a class="socialIcons" href="https://www.facebook.com/jennacolephotography"> 
-        <img src="../imgs/social_01.png" alt="Jenna Andersen on Facebook"></a>
-    <a class="socialIcons" href="https://github.com/jnicholea"> 
-        <img src="../imgs/social_14.png" alt="Jenna Andersen on GitHub"></a>
-    </section>
 
-    <section>
-    <div  class="greigeBox">
+<div class="container">
+
+  <div class="row">
+      <div id="breathing_room" class="col-md-4 col-xs-4" >
+      </div>
+      <div id="menu" class="col-md-8 col-xs-8" >
+      <h1>
+        <a class="menu_buttons" href="../index.html">home</a>
+        <a>|</a>
+        <a class="menu_buttons" href="../about.html">about</a>
+        <a>|</a>
+        <a class="menu_buttons" href="../works.html">works</a>
+        <a>|</a>
+        <a class="menu_buttons" href="./blog/index.html">blog</a>
+        <a id="email" href="mailto:jenna@jennaandersen.com">jenna@jennaandersen.com</a>
+      </h1>     
+      </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+      <div id="left_col" class="col-md-4 col-xs-1" >
+         <img id="logo" class="img-responsive" src="../imgs/homepageheader.png" alt="Jenna Andersen"></a>
+         <a class="socialIcons" class="img-responsive" href="https://twitter.com/jennacole"> 
+                <img src="../imgs/social_02.png" alt="Jenna Andersen on Twitter"></a>
+            <a class="socialIcons" class="img-responsive" href="https://instagram.com/jennacolephoto"> 
+                <img src="../imgs/social_04.png" alt="Jenna Andersen on Instagram"></a>
+            <a class="socialIcons" class="img-responsive" href="https://www.facebook.com/jennacolephotography"> 
+                <img src="../imgs/social_01.png" alt="Jenna Andersen on Facebook"></a>
+            <a class="socialIcons" class="img-responsive"href="https://github.com/jnicholea"> 
+                <img src="../imgs/social_14.png" alt="Jenna Andersen on GitHub"></a>
+
+                <div id="archive">
+                  <div id="archive_box"><a href="#">&#9658;Archive</a>
+                    <div id="drop_menu">
+                        <a href="http://jnicholea.github.io/blog/index.html#JSHint">Clean Up Your Javascript</a><br />
+                        <a href="http://jnicholea.github.io/blog/index.html#InstanceVariables">Instance Variables</a><br />
+                        <a href="http://jnicholea.github.io/blog/index.html#EnumeratorV">Enumerators v. Enumerables</a><br />
+                        <a href="http://jnicholea.github.io/blog/index.html#WannaHash">Wanna Hash? Maybe Array?</a><br />
+                        <a href="http://jnicholea.github.io/blog/index.html#ThinkingOf">Margin/Border/Padding</a><br />
+                        <a href="http://jnicholea.github.io/blog/index.html#TakingOwnership">Taking Ownership of DBC Experience</a><br />
+                        <a href="http://jnicholea.github.io/blog/index.html#VersionControl">Version Control and GitHub</a><br />
+                    </div>
+                  </div>
+                </div>
+          
+      </div>
+
+        <div id="right_col" class="col-md-8 .col-xs-11 ">
+                <section>
+                    <div class="body_stuffs"> 
 
      <h1><a name="JSHint">Clean Up Your Javascript</a></h1>
     <h4>10-5-2015</h4>
@@ -38,6 +83,7 @@
         <img class="blogImages" src="../imgs/blog_posts/jshint.png" alt="JSHint logo">
         <br>
         <br>
+        <div class="comment_more">
         JSHint is incredibly easy to use, and even complete beginners can get a lot out of it. Paste your Javascript code into the screen on the lefthand side and on the right side of the screen you will find information about what is contained in the code, as well as a list of warnings if the code has errors or strays outside the bounds of normal Javascript conventions.
         <br>
         <br> 
@@ -49,10 +95,12 @@
         JSHint has helped me clean up my code along with debugging that has untagled why a particular piece of code isn't performing as expected. It's the sort of open-source group-collaboration project that gets me excited about building up my coding skillset so I can help develop similar resources!
         <br>
         <br>
+        </div>
 
 
 
     </article>
+    <br>
     <div class="blogPostBreak"></div>
 
     <h1><a name="InstanceVariables">Why Use Instance Variables</a></h1>
@@ -71,8 +119,8 @@
         <br>
 
         But what about when you want methods to not only run one after the other, but pass information between them so Method B can build upon whatever Method A was tasked to accomplish?
-
-        Methods can be grouped together under a class and executed one after another to achieve the finale product. Instance variables are variables with an @ sign in front, allowing them to be accessed in both Method A and Method B. Here is a simple program for teaching basic math to a child. 
+        <div class="comment_more">
+        Methods can be grouped together under a class and executed one after another to achieve the finale product. Instance variables are variables with an @ sign in front, allowing them to be accessed in both Method A and Method B. Here is a simple program for teaching basic math to a child.
         <br>
         <br>
         <code>
@@ -111,8 +159,8 @@
 
         @answer is the variable used in both first_pass and second_pass. It seems silly to break them apart in this simple example, but once more complicated code is introduced moving the information between methods will become critical. In this basic example having the code run as two methods would allow the second_pass to be cut off, if the teacher wanted the student to skip the wiggles shaking and just focus on letting the child be asked the question, wait four seconds, and then be given the answer.
         <br>
-        <br> 
-
+        <br>
+        </div>
         </article>
     <div class="blogPostBreak"></div>
 
@@ -133,7 +181,8 @@
         <p><strong>Enumerables</strong> are a class of objects. Enumerable methods are a sort of pre-fabbed mix-in that can be used throughout the modules to execute different functions. I think of them as a shortcut I can take thanks to the creators of Ruby. I don't have to figure out how to break down the steps necessary for the computer to sort an array in alphabetical order, I can use .sort for that.</p>
 
         <p>I'm still trying to wrap my head around these concepts. If you have a clarification or explanation that will improve this post and my understanding, please tweet with me via <em>@jennacole</em> so I can make necessary modifications.
-    </p>
+        </p>
+         </div>
     </article>
 
     <div class="blogPostBreak"></div>
@@ -169,7 +218,7 @@
     -->11
     </pre>
 
-    There are 11 bakers bringing goodies to your sale, but you want to make sure you have variety. Cupcakes are great, but what if someone came to the sale craving a brownie? Once you've collected who will be bringing what, an array won't work for storing both the name of the person and what they are bringing. This is where an array is what you're looking for. An array stores an object, like the names referred to as strings in our bakers array above, but it also can store corresponding information for each object. One value is called a key, the other is called a value. Hashes are always built with key-value pairs. 
+    There are 11 bakers bringing goodies to your sale, but you want to make sure you have variety. Cupcakes are great, but what if someone came to the sale craving a brownie?  <div class="comment_more">Once you've collected who will be bringing what, an array won't work for storing both the name of the person and what they are bringing. This is where an array is what you're looking for. An array stores an object, like the names referred to as strings in our bakers array above, but it also can store corresponding information for each object. One value is called a key, the other is called a value. Hashes are always built with key-value pairs. 
 
     For our baking sale the names will be the keys and the yummy treats people bring will be the values. Key names must <b>always</b> be unique, so when creating your hash think through what strings or integers might be duplicates of each other and make that the values.
 
@@ -208,8 +257,9 @@
 
 
     </p>
+    </div>
     </article>
-
+    <br>
     <div class="blogPostBreak"></div>
 
     <h1><a name="ThinkingOf">Thinking of Margin/Border/Padding as Images on a Wall</a></h1>
@@ -235,7 +285,7 @@
         <img class="blogImages" src="../imgs/framedimage.jpg" alt="Image on Wall">
 
         <p>When making changes to elements on your site and trying to decide whether to change the border, padding, or margin, think about exactly what you're trying to change. Using the image on the wall above...</p>
-
+      
         <p>Do you want the image+mat+frame to stay the same, but you want the image to be closer to or farther from the edge of the wall? Change the margin.</p>
 
         <p>Do you like where the image+mat sit on the wall but want a thick pumpkin-orange border around the image and the mat? Change the border color and size.</p>
@@ -243,81 +293,104 @@
         <p>Do you want more breathing room between your image and your border? (A larger mat?) Change your padding.</p>
 
         <p>CSS placement can be tricky, and changing the above parameters might not put your logo or title or navigation bar quite where you'd like it to go. Your website is a series of boxes next to boxes inside boxes (divs) and there are a variety of factors that can affect how your website looks and where things go. But when you're thinking about one element, and the div it sits inside, and the way your element is placed within that div, changing the margin, border, and padding should get your content looking the way you desire it to.</p>
-    </p>
+
+       
     </article>
 
     <div class="blogPostBreak"></div>
 
     <h1><a name="TakingOwnership">Taking Ownership of the Dev Bootcamp Experience</a></h1>
-  <h3><em>Walk into the kitchen, grab a ladle, stir up your future</em></h3>
-  <h4>8-27-2015</h4>
+      <h3><em>Walk into the kitchen, grab a ladle, stir up your future</em></h3>
+      <h4>8-27-2015</h4>
 
-  <article class="blogPostText">
-    <p>
-      I signed up for <a href="http://devbootcamp.com/">Dev Bootcamp</a> specifically because of the phase-based program structure with an emphasis on developing the <a href="http://psychcentral.com/lib/what-is-emotional-intelligence-eq/">EQ</a> of an individual along with their <a href="http://www.quora.com/How-do-I-increase-my-IQ-1">IQ</a>. The phase-based program allows me the space I need to really learn the material, instead of forcing myself to rush in order to meet all of the deadlines. Of course my goal is to finish the program the week before Christmas and move into a new chapter of my life in the first week of 2016, but it is very important to me that I graudate the program after soaking up as much as possible before the technical interviews and the new job training begins. I've been passionate about the growth mindset after reading <a href="http://www.hachettebookgroup.com/titles/salman-khan/the-one-world-schoolhouse/9781455508372/">The One World Schoolhouse</a> and am excited to be a part of a learning environment where the capacity to learn is emphasized as robustly as the curriculum. 
-    </p>
-    <p>
-        <a href="https://vimeo.com/85001014">Shereef's Fireside Chat</a> clarified some of my assumptions and further reinforced that this program is the right choice for me. One week in and I'm already scrambling a bit to make furthter adjustments in my life to accomodate the workload of Phase 0. I've been a work-at-home-mom for over five years now, and there are a lot of things I'm going to need to adjust about my schedule and mindset in order to manage the demands of my future job. Phase 0 is not only preparing me for Phase 1, 2, and 3 of the DBC program, but also is providing me a glimpse into what my work-life balance is going to be like after DBC graduation. Attending a program without something like the Phase 0 ramp-up period and the Phase 1/2/3 holistic approach to developing a person instead of just a programmer would have been a recipe for mental/emotional collapse for me. 
-    </p>
-    <p>
-        I most appreciated the frank talk about a student's employment prospects post-graduation. Becoming employable is as important as the amount of programming skills a student absorbs, and employability and a firm grasp of a wide-variety of programming principles are not always the same thing. I was already approaching the program with a growth-mindset, but now I'll be striving to focus less on checking the "completion" box for each assignment, and more on developing the unique skillset I can take from this intense experience and leverage into a choice employment opportunity in January 2016. 
-    </p>
-    </article>
+      <article class="blogPostText">
+        <p>
+          I signed up for <a href="http://devbootcamp.com/">Dev Bootcamp</a> specifically because of the phase-based program structure with an emphasis on developing the <a href="http://psychcentral.com/lib/what-is-emotional-intelligence-eq/">EQ</a> of an individual along with their <a href="http://www.quora.com/How-do-I-increase-my-IQ-1">IQ</a>. The phase-based program allows me the space I need to really learn the material, instead of forcing myself to rush in order to meet all of the deadlines. Of course my goal is to finish the program the week before Christmas and move into a new chapter of my life in the first week of 2016, but it is very important to me that I graudate the program after soaking up as much as possible before the technical interviews and the new job training begins. I've been passionate about the growth mindset after reading <a href="http://www.hachettebookgroup.com/titles/salman-khan/the-one-world-schoolhouse/9781455508372/">The One World Schoolhouse</a> and am excited to be a part of a learning environment where the capacity to learn is emphasized as robustly as the curriculum. 
+        </p>
+        <p>
+            <a href="https://vimeo.com/85001014">Shereef's Fireside Chat</a> clarified some of my assumptions and further reinforced that this program is the right choice for me. One week in and I'm already scrambling a bit to make furthter adjustments in my life to accomodate the workload of Phase 0. I've been a work-at-home-mom for over five years now, and there are a lot of things I'm going to need to adjust about my schedule and mindset in order to manage the demands of my future job. Phase 0 is not only preparing me for Phase 1, 2, and 3 of the DBC program, but also is providing me a glimpse into what my work-life balance is going to be like after DBC graduation. Attending a program without something like the Phase 0 ramp-up period and the Phase 1/2/3 holistic approach to developing a person instead of just a programmer would have been a recipe for mental/emotional collapse for me. 
+        </p>
+        <p>
+            I most appreciated the frank talk about a student's employment prospects post-graduation. Becoming employable is as important as the amount of programming skills a student absorbs, and employability and a firm grasp of a wide-variety of programming principles are not always the same thing. I was already approaching the program with a growth-mindset, but now I'll be striving to focus less on checking the "completion" box for each assignment, and more on developing the unique skillset I can take from this intense experience and leverage into a choice employment opportunity in January 2016. 
+        </p>
+        </article>
 
    <div class="blogPostBreak"></div>
 
 
-   <h1><a name="VersionControl">Version Control and GitHub</a></h1>
-  
-   <h4>8-25-2015</h4>
+      <h1><a name="VersionControl">Version Control and GitHub</a></h1>
+          
+         <h4>8-25-2015</h4>
 
-  <article class="blogPostText">
-    <p>
-      During my college years group projects were one of my least favorite things. It took far too long to decide on a project focus, and once we did start working toward something we would have to pull out our calendars and try to find a time where we could all meet up at the same time. This was before Google Docs, and working remotely on the same file would require saving multiple versions of the same file to keep track of which version we were working on. <i>Historypaper1, Historypaper2-modifiedoctober5, HistorypapereditsbyJenna,</i> etc etc. Today when working on group projects there is no need for meeting in the same place at the same time to work, or renaming the same file over and over to try to keep track of what changed what and when. Establishing a tight workflow that implements a version control system and utilizes Git and Github will address all of those obstacles.
-    </p>
-    <p>
-        Version control is a system used to track changes to file(s) over time. Using "save as" to save multiple versions of the same file is a crude version of this. As a photographer I have developed a version control system for my photographs that utilizes the snapshot function in Photoshop or Lightroom. As I work on an image I take snapshots at specific points, allowing me to compare changes and go back to a specific edit if I'd like to go back and try a different method for the finished product. Developers use version control systems like Git to make virtual clones of the project they (and their team) are working on. Changes are added and recorded using Git, and then those changes are pushed over to a site like GitHub so the rest of the group can see them and utilize them in their own work on the project. 
-    </p>
-    <p>
-        GitHub is a social network hub that currently claims the title of largest online storage space of collaborative works. Upload your code to GitHub and mark it public and anyone who stumbles across your profile can take your code, load it on to their own computer, manipulate it, and upload their own version back to GitHub where the process can be repeated by someone else. Going back to the college group project example, college students working on coding projects for a class assignment can establish roles and responsibilities for each group member, create the main repository for their assignment, and complete the entire project remotely without the need to meet in person. If responsibilities are fuzzy and two people make changes in the same area GitHub will illuminate any merge conflicts to prevent duplicate work or overwriting of someone's efforts. A proper workflow will include a log of all changes, including information on who made the change, so there would be no more confusion about who is or isn't pulling their weight. 
-    </p>
-    </article>
-   <section>
-    <a class="visitThese" href="../index.html">home</a>
-    <a class="visitThese" href="../about.html">about</a>
-    <a class="visitThese" href="../works.html">works</a>
-    <a class="visitThese" href="./index.html">blog</a>
-    </section>
-    
+          <article class="blogPostText">
+            <p>
+              During my college years group projects were one of my least favorite things. It took far too long to decide on a project focus, and once we did start working toward something we would have to pull out our calendars and try to find a time where we could all meet up at the same time. This was before Google Docs, and working remotely on the same file would require saving multiple versions of the same file to keep track of which version we were working on. <i>Historypaper1, Historypaper2-modifiedoctober5, HistorypapereditsbyJenna,</i> etc etc. Today when working on group projects there is no need for meeting in the same place at the same time to work, or renaming the same file over and over to try to keep track of what changed what and when. Establishing a tight workflow that implements a version control system and utilizes Git and Github will address all of those obstacles.
+            </p>
+            <p>
+                Version control is a system used to track changes to file(s) over time. Using "save as" to save multiple versions of the same file is a crude version of this. As a photographer I have developed a version control system for my photographs that utilizes the snapshot function in Photoshop or Lightroom. As I work on an image I take snapshots at specific points, allowing me to compare changes and go back to a specific edit if I'd like to go back and try a different method for the finished product. Developers use version control systems like Git to make virtual clones of the project they (and their team) are working on. Changes are added and recorded using Git, and then those changes are pushed over to a site like GitHub so the rest of the group can see them and utilize them in their own work on the project. 
+            </p>
+            <p>
+                GitHub is a social network hub that currently claims the title of largest online storage space of collaborative works. Upload your code to GitHub and mark it public and anyone who stumbles across your profile can take your code, load it on to their own computer, manipulate it, and upload their own version back to GitHub where the process can be repeated by someone else. Going back to the college group project example, college students working on coding projects for a class assignment can establish roles and responsibilities for each group member, create the main repository for their assignment, and complete the entire project remotely without the need to meet in person. If responsibilities are fuzzy and two people make changes in the same area GitHub will illuminate any merge conflicts to prevent duplicate work or overwriting of someone's efforts. A proper workflow will include a log of all changes, including information on who made the change, so there would be no more confusion about who is or isn't pulling their weight. 
+            </p>
+            </article>
+                <section>
+                
+                </div>
+                </div>
+                </section>
+         
+        </div>
+
+
     </div>
-    </section>
+</div>
 
-    <section>
-    	<ul class="postLinks">
-            <li id="postLinksHeader">Archive</li>
-            <li>
-             <a href="http://jnicholea.github.io/blog/index.html#JSHint">JSHint</a>
-            </li>
-            <li>
-             <a href="http://jnicholea.github.io/blog/index.html#InstanceVariables">Instance Variables</a>
-            </li>
-            <li>
-             <a href="http://jnicholea.github.io/blog/index.html#EnumeratorV">Enumerators v. Enumerables</a>
-            </li>
-            <li>
-            <a href="http://jnicholea.github.io/blog/index.html#WannaHash">Wanna Hash? Maybe Array?</a>
-            </li>
-            <li>
-            <a href="http://jnicholea.github.io/blog/index.html#ThinkingOf">Margin/Border/Padding</a>
-            </li>
-            <li><a href="http://jnicholea.github.io/blog/index.html#TakingOwnership">Taking Ownership of DBC Experience</a>
-            </li>
-            <li><a href="http://jnicholea.github.io/blog/index.html#VersionControl">Version Control and GitHub</a>
-            </li>
-           
-            </li>
-    </section>
 
+<div class="container">
+
+  <div class="row">
+      <div id="footer" class="col-md-12" >
+        <p>Jenna Andersen - 2015 - All Rights Reserved</p>
+      </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function() {
+    var showChar = 100;
+    var ellipsestext = "...";
+    var moretext = "more of this post";
+    var lesstext = "less of this post";
+    $('.comment_more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar-1, content.length - showChar);
+
+            var html = c + '<span class="moreelipses">'+ellipsestext+'</span>&nbsp;<span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">'+moretext+'</a></span>';
+
+            $(this).html(html);
+        }
+
+    });
+
+    $(".morelink").click(function(){
+        if($(this).hasClass("less of this post")) {
+            $(this).removeClass("less of this post");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less of this post");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
+</script>
 
 </body>
 </html>

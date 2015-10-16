@@ -1,45 +1,147 @@
 <!DOCTYPE html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="./stylesheets/works.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/works.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   <title>Jenna Andersen</title>
 
 </head>
 <body>
-   
-    <img id="header" src="./imgs/homepageheader.png" alt="Jenna Andersen"></a>
-    <section>
-    <a class="socialIcons" href="https://twitter.com/jennacole"> 
-        <img src="./imgs/social_02.png" alt="Jenna Andersen on Twitter"></a>
-    <a class="socialIcons" href="https://instagram.com/jennacolephoto"> 
-        <img src="./imgs/social_04.png" alt="Jenna Andersen on Instagram"></a>
-    <a class="socialIcons" href="https://www.facebook.com/jennacolephotography"> 
-        <img src="./imgs/social_01.png" alt="Jenna Andersen on Facebook"></a>
-    </section>
 
-    <section>
-    <div  class="greigeBox">
-    <p class="bodyText"> 
-    <div class="worksLinks"> 
-      <a href="./projects/cheat-sheets/js-cheat-sheet.html">Javascript Cheat Sheet</a><br><br>
-      <a href="./projects/jsdiegame.html">Guess & Roll</a>
-    </div>
-    </p>
-   
-    <a class="visitTheseInd" href="./index.html">home</a>
-    <a class="visitTheseInd" href="./about.html">about</a>
-    <a class="visitTheseInd" href="./works.html">works</a>
-    <a class="visitTheseInd" href="./blog/index.html">blog</a>
-    
-    </div>
-    </section>
 
-    <section>
-    	<address class="mailTo">
-    		<a href="mailto:jenna@jennaandersen.com">jenna@jennaandersen.com</a>
-    	</address>
-    </section>
+<div class="container">
+<div class="container">
+
+  <div class="row">
+      <div id="breathing_room" class="col-md-4 col-xs-4" >
+      </div>
+      <div id="menu" class="col-md-8 col-xs-8" >
+      <h1>
+        <a class="menu_buttons" href="./index.html">home</a>
+        <a>|</a>
+        <a class="menu_buttons" href="./about.html">about</a>
+        <a>|</a>
+        <a class="menu_buttons" href="./works.html">works</a>
+        <a>|</a>
+        <a class="menu_buttons" href="./blog/index.html">blog</a>
+        <a id="email" href="mailto:jenna@jennaandersen.com">jenna@jennaandersen.com</a>
+      </h1>     
+      </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+      <div id="left_col" class="col-md-4 col-xs-1" >
+         <img id="logo" class="img-responsive" src="./imgs/homepageheader.png" alt="Jenna Andersen"></a>
+         <a class="socialIcons" class="img-responsive" href="https://twitter.com/jennacole"> 
+                <img src="./imgs/social_02.png" alt="Jenna Andersen on Twitter"></a>
+            <a class="socialIcons" class="img-responsive" href="https://instagram.com/jennacolephoto"> 
+                <img src="./imgs/social_04.png" alt="Jenna Andersen on Instagram"></a>
+            <a class="socialIcons" class="img-responsive" href="https://www.facebook.com/jennacolephotography"> 
+                <img src="./imgs/social_01.png" alt="Jenna Andersen on Facebook"></a>
+            <a class="socialIcons" class="img-responsive"href="https://github.com/jnicholea"> 
+                <img src="./imgs/social_14.png" alt="Jenna Andersen on GitHub"></a>
+      </div>
+
+        <div id="right_col" class="col-md-8 .col-xs-11 ">
+<!--                 <section> -->
+            <div class="row">
+              <div class="body_stuffs">
+                <div class="col-md-6" > 
+
+                    <!-- <p class="project_headers">coding</p> -->
+                        <img class="project_screens" id="js_cheat_screen" src="./imgs/javascriptsheet.png" href="./projects/cheat-sheets/js-cheat-sheet.html">
+                        <a class="project_links"  href="./projects/cheat-sheets/js-cheat-sheet.html">&#9658;Javascript Cheat Sheet</a>
+                        <br>
+                        <br>
+                        <img class="project_screens" id="js_die_game" src="./imgs/dieroll.png"  href="./projects/jsdiegame.html">
+                        <br>
+                        <a class="project_links"  href="./projects/jsdiegame.html">&#9658;Guess & Roll</a>
+                    </div>
+                <div class="col-md-6" > 
+                   <!--  <p class="project_headers">misc</p> -->
+                        <img class="project_screens" id="jenna_cole" src="./imgs/filmphotography.png"  href="https://instagram.com/jennacolephoto/">
+                        <br>
+                        <a class="project_links"  href="https://instagram.com/jennacolephoto/">&#9658;Jenna Cole Photography</a>
+                        <br>
+                        <br>
+                         <img class="project_screens" id="pinterest_fail" src="./imgs/pinterestfail.png"  href="http://pinterestfail.com/">
+                        <br>
+                        <a class="project_links"  href="http://pinterestfail.com/">&#9658;Pinterest Fail</a>
+                </div>
+<!--                 </section> -->
+               
+             </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container">
+
+  <div class="row">
+      <div id="footer" class="col-md-12" >
+        <p>Jenna Andersen - 2015 - All Rights Reserved</p>
+      </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('#js_cheat_screen').on('mouseover', function(e){
+        e.preventDefault()
+        $(this).attr('src', './imgs/javascriptsheet_overlay.png')
+    });
+    $('#js_cheat_screen').on('mouseleave', function(e){
+        e.preventDefault()
+    $(this).attr('src', './imgs/javascriptsheet.png')
+    });
+});
+
+$(document).ready(function(){
+    $('#js_die_game').on('mouseover', function(e){
+        e.preventDefault()
+        $(this).attr('src', './imgs/dieroll_overlay.png')
+    });
+    $('#js_die_game').on('mouseleave', function(e){
+        e.preventDefault()
+    $(this).attr('src', './imgs/dieroll.png')
+    });
+});
+
+$(document).ready(function(){
+    $('#jenna_cole').on('mouseover', function(e){
+        e.preventDefault()
+        $(this).attr('src', './imgs/filmphotography_overlay.png')
+    });
+    $('#jenna_cole').on('mouseleave', function(e){
+        e.preventDefault()
+    $(this).attr('src', './imgs/filmphotography.png')
+    });
+});
+
+$(document).ready(function(){
+    $('#pinterest_fail').on('mouseover', function(e){
+        e.preventDefault()
+        $(this).attr('src', './imgs/pinterestfail_overlay.png')
+    });
+    $('#pinterest_fail').on('mouseleave', function(e){
+        e.preventDefault()
+    $(this).attr('src', './imgs/pinterestfail.png')
+    });
+});
+</script>
 
 
 </body>
 </html>
+
